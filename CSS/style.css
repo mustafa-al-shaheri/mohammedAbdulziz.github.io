@@ -12,48 +12,63 @@
     display:flex;
     background-color:var(--pr-color);
     flex-wrap: wrap;
-    
-  
-    width:100%;
-    justify-content: center space-evenly;
-    align-items: center;
-    border-bottom:5px solid rgba(0, 0, 0, 0.11);
+    justify-content:space-around;
+    box-shadow: 0 8px 6px -6px black;
 }
-.navbar .logo{
-    flex:2;
-    flex-basis: 50px;
+.navbar .logo:hover{
+   cursor: pointer;
 }
 .navbar .logo img{
     height:70px;
     width: auto;
+    padding-top:5px;
 }
 .navbar ul{
-    flex:1.7;
     display:flex;
-    justify-content: center space-evenly;
     align-items: center;
     flex-wrap:wrap;
-    height: 100%;
+    
 }
 .navbar ul li{
-    display: inline-block;
     flex:1;
     list-style: none;
     height: 100%;
+    
 }
+
 .navbar ul li a{
     display: inline-block;
     text-decoration: none;
     color: white;
-    height: 100%;
-    width: 90%;
     text-align: center;
     font-weight: bold;
-
+    margin-top:12px;
+    padding: 12px 12px 012px 12px;
+    height: 70%;
+}
+.navbar ul li:last-child a{
+    min-width:130px;
 }
 .navbar ul li a:hover{
-    padding:10px 0;
     background-color:var(--pr1-color);
     border-radius: 5px;
     border-bottom:5px solid rgba(0, 0, 0, 0.11);
+}
+@media (max-width:600px){
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar ul li{
+        margin-bottom: 10px;
+    }
+    .navbar ul li a{
+       text-align: left;
+       padding:0 10px;
+       width:100%;
+    }
 }
