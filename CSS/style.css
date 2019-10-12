@@ -9,11 +9,14 @@
 }
 /* *********************************************NavBar******************************* */
 .navbar{
+    position: fixed;
+    width: 100%;
     display:flex;
     background-color:var(--pr-color);
     flex-wrap: wrap;
     justify-content:space-around;
     box-shadow: 0 8px 6px -6px black;
+    z-index: 1;
 }
 .navbar .logo:hover{
    cursor: pointer;
@@ -54,7 +57,69 @@
     border-radius: 5px;
     border-bottom:5px solid rgba(0, 0, 0, 0.11);
 }
+.clear{
+    height: 70px;
+    clear: both;
+}
 /* *********************************************Hero******************************** */
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.158), rgba(0, 0, 0, 0.158)), url("../Images/Hero.png");
+    background-position: left left;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color:white;
+    padding:15% 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.hero .hero-des{
+    
+}
+.hero .hero-des h1{
+font-size: 60px;
+}
+.hero .hero-des .des{
+    width:20rem;
+    font-size: 1.2rem;
+}
+.hero .hero-des .downloads a{
+    display:inline-block;
+    background:white;
+    margin:15px 0;
+    padding:15px 10px 7px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:black;
+    width:12rem;
+    text-align:center;
+    border-radius: 5px;
+    border-bottom:5px solid rgba(0, 0, 0, 0);
+    position: relative;
+    font-weight: bold;
+}
+.hero .hero-des .downloads .google a img, .hero .hero-des .downloads .apple a img{
+    height: 40px;
+    width: auto;
+    position: absolute;
+    top:5px;
+    left:15px;
+}
+.hero .hero-des .downloads a:hover{
+    background:var(--pr1-color);
+    border-bottom:5px solid rgba(0, 0, 0, 0.11);
+    color:white;
+
+}
+.hero .hero-img img{
+    max-width:600px;
+    height: auto;
+}
+/* *********************************************Main******************************** */
+/* *********************************************Fearures******************************** */
+
+
+
 @media (max-width:600px){
     .navbar{
         flex-direction: column;
