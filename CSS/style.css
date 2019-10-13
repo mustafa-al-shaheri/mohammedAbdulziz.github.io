@@ -127,7 +127,7 @@
 font-size: 60px;
 }
 .hero .hero-des .des{
-    width:20rem;
+    width:100%;
     font-size: 1.2rem;
 }
 .hero .hero-des .downloads a{
@@ -162,7 +162,7 @@ font-size: 60px;
     flex:3;
 }
 .hero .hero-img img{
-    max-width:100%;
+    width:100%;
     height: auto;
 }
 /* *********************************************Main******************************** */
@@ -279,7 +279,7 @@ font-size: 60px;
     min-height: 100px;
 }
 .forms .contact-form{
-    flex:1;
+    flex:45%;
     border-right: rgba(0, 0, 0, 0.521) solid 3px;
     height:100%;
     padding:30px 10px 10px 10px;
@@ -295,7 +295,7 @@ font-size: 60px;
     font-weight: bold;
 }
 .forms .email-us{
-    flex:2;
+    flex:55%;
     padding:30px 10px 10px 10px;
     display:flex;
     flex-wrap: wrap;
@@ -303,7 +303,7 @@ font-size: 60px;
     
 }
 .forms .email-us textarea{
-    max-width:70%;
+    max-width:40%;
     
     margin: 5px 0 10px 10px;
     border-radius: 5px;
@@ -354,6 +354,8 @@ font-size: 60px;
         justify-content: space-around;
         flex-direction: column;
     }
+
+    
     .navbar>ul{
         flex-direction: column;
         justify-content: center;
@@ -362,6 +364,7 @@ font-size: 60px;
         opacity:0;
         transition: opacity  2s ease;
     }
+   
     .BMenu{
         z-index:3;
         visibility: visible;
@@ -392,6 +395,20 @@ font-size: 60px;
     }
     .hero .hero-des{
         order:2;
+        width:100%;
     }
-    
+    .hero .hero-des h1{
+        visibility: hidden;
+    }
+    .hero .hero-des p{
+        width: 100%;
+        text-align: center;
+        font-size:xx-small;
+    }
+    .hero .hero-img {
+        order:1;
+        width:100%;
+        height: auto;
+        flex:1;
+    }
 }
